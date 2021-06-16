@@ -1,0 +1,149 @@
+//
+//  ViewController.swift
+//  TestSwiftApplication
+//
+//  Created by apple on 2021/6/2.
+//
+
+import UIKit
+import Dispatch
+
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    @objc dynamic var currendIndex: NSInteger = 0
+    var escapingCallback:(()-> () )?
+    var tableView: UITableView?
+    static var kDataSourceCount: Int = 80
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //设置标题
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        //设置导航栏
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(),for: UIBarMetrics.default)
+        //设置导航栏暗影透明
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //设置状态栏样式
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        //设置状态栏隐藏
+        UIApplication.shared.isStatusBarHidden = true
+//      UIWindow
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.white
+        tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kWidth, height: kHeight), style: .plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        self.view .addSubview(tableView!)
+        tableView?.sf_registerCell(cell: SFVideoListCell.self)
+        if #available(iOS 11.0, *) {
+            tableView?.contentInsetAdjustmentBehavior  = UIScrollView.ContentInsetAdjustmentBehavior.never
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false;
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            self.tableView?.reloadData()
+            let curIndexPath: NSIndexPath = NSIndexPath.init(row:self.currendIndex, section: 0)
+            self.tableView?.scrollToRow(at: curIndexPath as IndexPath, at: UITableView.ScrollPosition.middle, animated: false)
+            
+            self.addObserver(self, forKeyPath:"currendIndex", options: [NSKeyValueObservingOptions.new,NSKeyValueObservingOptions.initial], context: nil)
+        }
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(statusBarTouchBegin),
+                                               name: NSNotification.Name(rawValue: "StatusBarTouchBeginNotification"),
+                                               object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationBecomeAction),
+                                               name: UIApplication.willEnterForegroundNotification,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationEnterBackground),
+                                               name: UIApplication.didEnterBackgroundNotification,
+                                               object: nil)
+    }
+    @objc  func statusBarTouchBegin() {
+        
+        
+    }
+    @objc func applicationBecomeAction() {
+        
+    }
+    @objc func applicationEnterBackground() {
+        
+    }
+    deinit {
+        tableView?.layer.removeAllAnimations()
+        NotificationCenter.default.removeObserver(self)
+        self.removeObserver(self, forKeyPath: "currentIndex")
+    }
+}
+
+
+extension ViewController{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return kHeight
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ViewController.kDataSourceCount
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.sf_dequeueReusableCell(indexPath: indexPath) as SFVideoListCell
+        cell.currentIndex = indexPath.row
+        cell.backgroundColor = randomColor()
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("当前点击的是\(indexPath.row)行")
+    }
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        DispatchQueue.main.async {
+            let translatedPoint = scrollView.panGestureRecognizer.translation(in: scrollView)
+            //UITableView禁止响应其他滑动手势
+            scrollView.panGestureRecognizer.isEnabled = false
+            if translatedPoint.y < -50 && self.currendIndex < (ViewController.kDataSourceCount - 1) {
+                self.currendIndex = self.currendIndex + 1 //    //向上滑动  索引递增
+            }
+            if translatedPoint.y > 50   &&  self.currendIndex > 0 {
+                self.currendIndex = self.currendIndex  - 1 //    //向下滑动  索引递减
+            }
+            
+            UIView.animate(withDuration: 0.15, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut) {
+                //UItableView 滑动到其他指定cell
+                self.tableView?.scrollToRow(at: NSIndexPath.init(row: self.currendIndex, section: 0) as IndexPath, at: UITableView.ScrollPosition.top, animated: false)
+            } completion: {_ in
+                //UITableView 可以响应其他滑动手势
+                scrollView.panGestureRecognizer.isEnabled = true
+            }
+        }
+        
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "currendIndex" {
+            //获取当前显示的cell
+            let indexPath = NSIndexPath(row:self.currendIndex , section: 0)
+            var cell : SFVideoListCell = tableView?.cellForRow(at: indexPath as IndexPath) as! SFVideoListCell
+//            __weak typeof (cell) wcell = cell;
+//            __weak typeof (self) wself = self;
+            //用cell控制相关视频播放
+            print("indexPath",self.currendIndex)
+            
+        }else{
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+        }
+    }
+    func randomColor() -> UIColor {
+        let hue: CGFloat = CGFloat(((arc4random() % 2) / 256))
+        let saturation: CGFloat = CGFloat(((arc4random() % 128) / 256)) + 0.5  //  0.5 to 1.0, away from white
+        let brightness: CGFloat = CGFloat(((arc4random() % 128) / 256)) + 0.5 //  0.5 to 1.0, away from black
+        
+        return UIColor.init(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+    }
+}
