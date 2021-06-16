@@ -101,7 +101,10 @@ extension ViewController{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("当前点击的是\(indexPath.row)行")
+        let rxVC = RxSwiftController()
+        self.navigationController?.pushViewController(rxVC, animated: true)
     }
+    
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         DispatchQueue.main.async {
             let translatedPoint = scrollView.panGestureRecognizer.translation(in: scrollView)

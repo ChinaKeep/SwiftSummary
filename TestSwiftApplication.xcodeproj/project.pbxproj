@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186CCCCA267A017C00A97336 /* RxSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CCCC9267A017C00A97336 /* RxSwiftController.swift */; };
 		18ACF5392667935B0049DB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACF5382667935B0049DB4E /* AppDelegate.swift */; };
 		18ACF53B2667935B0049DB4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACF53A2667935B0049DB4E /* SceneDelegate.swift */; };
 		18ACF53D2667935B0049DB4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACF53C2667935B0049DB4E /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186CCCC9267A017C00A97336 /* RxSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftController.swift; sourceTree = "<group>"; };
 		18ACF5352667935B0049DB4E /* TestSwiftApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ACF5382667935B0049DB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ACF53A2667935B0049DB4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				18ACF5382667935B0049DB4E /* AppDelegate.swift */,
 				18ACF53A2667935B0049DB4E /* SceneDelegate.swift */,
 				18ACF53C2667935B0049DB4E /* ViewController.swift */,
+				186CCCC9267A017C00A97336 /* RxSwiftController.swift */,
 				18D40F002671E94600A44280 /* SFVideoListCell.swift */,
 				18D40F012671E94600A44280 /* SFVideoListCell.xib */,
 				18D40EFB2671E15200A44280 /* SFScreenSizeTool.swift */,
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */,
+				186CCCCA267A017C00A97336 /* RxSwiftController.swift in Sources */,
 				18ACF53D2667935B0049DB4E /* ViewController.swift in Sources */,
 				18ACF5392667935B0049DB4E /* AppDelegate.swift in Sources */,
 				18ACF53B2667935B0049DB4E /* SceneDelegate.swift in Sources */,
