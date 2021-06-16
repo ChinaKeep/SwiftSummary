@@ -7,13 +7,22 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13, *) {
+
+        }else{
+            let window = UIWindow()
+            window.rootViewController = ViewController()
+            self.window = window
+            window.makeKeyAndVisible()
+        }
         return true
     }
 

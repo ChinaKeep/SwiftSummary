@@ -51,7 +51,8 @@ protocol StoryboardLoadable {}
 // Self 返回当前的类
 extension StoryboardLoadable where Self: UIViewController {
     /// 提供 加载方法
-  static func loadStoryboard() -> Self {
+    @available(iOS 13.0, *)
+    static func loadStoryboard() -> Self {
         return UIStoryboard.init(name: "\(self)", bundle: nil).instantiateViewController(identifier: "\(self)")
     }
 }
