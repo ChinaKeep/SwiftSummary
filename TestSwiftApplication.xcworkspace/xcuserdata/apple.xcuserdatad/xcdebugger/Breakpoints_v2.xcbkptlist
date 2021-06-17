@@ -3,18 +3,4 @@
    uuid = "22487CA1-CC5A-4A18-A066-96648B7E8C17"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "D0C97BAF-0DA5-499C-BE62-270DC6925769"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            breakpointStackSelectionBehavior = "1"
-            scope = "1"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

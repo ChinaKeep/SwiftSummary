@@ -13,6 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var escapingCallback:(()-> () )?
     var tableView: UITableView?
     static var kDataSourceCount: Int = 80
+    var funcNamesArray:[String]?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -62,6 +63,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         NotificationCenter.default.addObserver(self, selector: #selector(applicationEnterBackground),
                                                name: UIApplication.didEnterBackgroundNotification,
                                                object: nil)
+        
+        funcNamesArray = ["可选模式","RxSwift"]
     }
     @objc  func statusBarTouchBegin() {
         
@@ -90,19 +93,35 @@ extension ViewController{
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ViewController.kDataSourceCount
+//        return ViewController.kDataSourceCount
+        return funcNamesArray!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.sf_dequeueReusableCell(indexPath: indexPath) as SFVideoListCell
         cell.currentIndex = indexPath.row
+        cell.funcNameString = funcNamesArray?[indexPath.row] ?? "default"
         cell.backgroundColor = randomColor()
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("当前点击的是\(indexPath.row)行")
-        let rxVC = RxSwiftController()
-        self.navigationController?.pushViewController(rxVC, animated: true)
+        switch indexPath.row {
+        case 0:
+            let optionalModeVC = OptionalModeController()
+            self.navigationController?.pushViewController(optionalModeVC, animated: true)
+            break
+            
+        case 1:
+            let rxVC = RxSwiftController()
+            self.navigationController?.pushViewController(rxVC, animated: true)
+            break
+        
+        default:
+            print("default")
+        }
+      
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {

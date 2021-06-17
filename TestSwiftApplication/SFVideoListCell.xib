@@ -18,19 +18,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G5-O8-Pem">
-                        <rect key="frame" x="139" y="11.5" width="42" height="21"/>
+                        <rect key="frame" x="29" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-7z-rvP">
+                        <rect key="frame" x="228" y="11.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XMc-7z-rvP" secondAttribute="trailing" constant="50" id="CIV-l2-Ge8"/>
                     <constraint firstItem="7G5-O8-Pem" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NZZ-lN-XsY"/>
-                    <constraint firstItem="7G5-O8-Pem" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="f7s-UU-rtR"/>
+                    <constraint firstItem="XMc-7z-rvP" firstAttribute="centerY" secondItem="7G5-O8-Pem" secondAttribute="centerY" id="euC-Ft-Fyg"/>
+                    <constraint firstItem="7G5-O8-Pem" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-110" id="f7s-UU-rtR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="funcName" destination="XMc-7z-rvP" id="xik-IX-t2e"/>
                 <outlet property="indexLabel" destination="7G5-O8-Pem" id="QlJ-a5-l63"/>
             </connections>
             <point key="canvasLocation" x="42" y="95"/>
