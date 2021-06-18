@@ -4,6 +4,7 @@ target 'TestSwiftApplication' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
+  
   pod 'SnapKit' #布局约束
 
 end
