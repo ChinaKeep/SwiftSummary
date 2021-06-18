@@ -7,6 +7,19 @@
 
 import UIKit
 
+//字符串扩展 以用于switch case 判断
+extension String {
+    static func ~=(pattern:(String) -> Bool  ,value: String) -> Bool {
+        pattern(value)
+    }
+}
+
+extension Int{
+    static func ~=(pattern:(Int) -> Bool,value: Int) -> Bool {
+        pattern(value)
+    }
+}
+
 class OptionalModeController: UIViewController {
 
     //自定义表达式模式
@@ -27,7 +40,22 @@ class OptionalModeController: UIViewController {
     }
   
     
-    
+    func hasPrefix(_ prefix: String) -> ((String) -> Bool) {
+        {
+            $0.hasPrefix(prefix)
+        }
+        //闭包表达式的简写如上
+//        return {
+//            (str: String) -> Bool in
+//            str.hasPrefix(prefix)
+//        }
+    }
+    func isEven(_ i:Int) -> Bool {
+        i % 2 == 0
+    }
+    func isOdd(_ i: Int) -> Bool {
+        i % 2 != 0
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.red
@@ -90,10 +118,57 @@ class OptionalModeController: UIViewController {
             print("if case 相当于单个switch case")
         }
         
+        // 表达式模式二
+        var str = "123456"
+        print(str.hasPrefix("123"))
+        print(str.hasSuffix("456"))
+            
         
+        var age = 10
+        switch age {
+        case isEven: //放的是函数类型
+            print("是偶数")
+        case isOdd:
+            print("是奇数")
+        default:
+            break
+        }
         
+        //可以使用where 为模式匹配增加匹配条件
+        var data = (10,"Jack")
+        switch data {
+        case let (age,_) where age > 10 :
+            print(data.1,"age> 10")
+        case let (age,_) where age > 0 :
+            print(data.1,"age> 0")
+        default:
+            break
+        }
         
+        var ages = [10,20,44,23,55]
+        for age  in ages where age > 30 {
+            print(age)
+        }
+        /**
+         注释
+         */
+        func test(){
+            // TODO: 未完成
+            // MARK: - 标记
+            
+            // MARK: 哈哈哈哈
+        }
+        //条件编译
+        //debug 模式
+        #if DEBUG
+        
+        #else
+        
+        #endif
+        
+        //Swift 中没有宏定义这么一个说法的
+        print("23333")
     }
-
+  
 
 }

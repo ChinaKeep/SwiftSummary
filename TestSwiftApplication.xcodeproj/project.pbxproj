@@ -17,6 +17,7 @@
 		18ACF5452667935E0049DB4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ACF5432667935E0049DB4E /* LaunchScreen.storyboard */; };
 		18ACF5502667935F0049DB4E /* TestSwiftApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACF54F2667935F0049DB4E /* TestSwiftApplicationTests.swift */; };
 		18ACF55B2667935F0049DB4E /* TestSwiftApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACF55A2667935F0049DB4E /* TestSwiftApplicationUITests.swift */; };
+		18AE37BB267C82DD001CB064 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE37BA267C82DD001CB064 /* Log.swift */; };
 		18D40EFC2671E15200A44280 /* SFScreenSizeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D40EFB2671E15200A44280 /* SFScreenSizeTool.swift */; };
 		18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D40F002671E94600A44280 /* SFVideoListCell.swift */; };
 		18D40F032671E94600A44280 /* SFVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D40F012671E94600A44280 /* SFVideoListCell.xib */; };
@@ -57,6 +58,7 @@
 		18ACF5562667935F0049DB4E /* TestSwiftApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSwiftApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ACF55A2667935F0049DB4E /* TestSwiftApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftApplicationUITests.swift; sourceTree = "<group>"; };
 		18ACF55C2667935F0049DB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AE37BA267C82DD001CB064 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		18D40EFB2671E15200A44280 /* SFScreenSizeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreenSizeTool.swift; sourceTree = "<group>"; };
 		18D40F002671E94600A44280 /* SFVideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFVideoListCell.swift; sourceTree = "<group>"; };
 		18D40F012671E94600A44280 /* SFVideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFVideoListCell.xib; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				18ACF53C2667935B0049DB4E /* ViewController.swift */,
 				186CCCC9267A017C00A97336 /* RxSwiftController.swift */,
 				187F865F267AF669006D40ED /* OptionalModeController.swift */,
+				18AE37BA267C82DD001CB064 /* Log.swift */,
 				18D40F002671E94600A44280 /* SFVideoListCell.swift */,
 				18D40F012671E94600A44280 /* SFVideoListCell.xib */,
 				18D40EFB2671E15200A44280 /* SFScreenSizeTool.swift */,
@@ -348,6 +351,7 @@
 				187F8660267AF669006D40ED /* OptionalModeController.swift in Sources */,
 				18ACF5392667935B0049DB4E /* AppDelegate.swift in Sources */,
 				18ACF53B2667935B0049DB4E /* SceneDelegate.swift in Sources */,
+				18AE37BB267C82DD001CB064 /* Log.swift in Sources */,
 				18D40EFC2671E15200A44280 /* SFScreenSizeTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,8 +529,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestSwiftApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,8 +551,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestSwiftApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

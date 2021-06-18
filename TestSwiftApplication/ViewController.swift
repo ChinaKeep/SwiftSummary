@@ -65,6 +65,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                                                object: nil)
         
         funcNamesArray = ["可选模式","RxSwift"]
+        
+        navigationItem.rightBarButtonItem  = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(rightBtnClick))
+        
+    }
+    
+    @objc func rightBtnClick()  {
+        print("rightBtnClick")
     }
     @objc  func statusBarTouchBegin() {
         
