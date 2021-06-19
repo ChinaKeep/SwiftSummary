@@ -22,6 +22,7 @@
 		18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D40F002671E94600A44280 /* SFVideoListCell.swift */; };
 		18D40F032671E94600A44280 /* SFVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D40F012671E94600A44280 /* SFVideoListCell.xib */; };
 		586EE7E1A5B9FA93F13A7660 /* Pods_TestSwiftApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B87663F036EBC5B972121C5 /* Pods_TestSwiftApplication.framework */; };
+		CA5CAAAE267E29980085CE85 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5CAAAD267E29980085CE85 /* KPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		2C02542535A433957DBC3B73 /* Pods-TestSwiftApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApplication.release.xcconfig"; path = "Target Support Files/Pods-TestSwiftApplication/Pods-TestSwiftApplication.release.xcconfig"; sourceTree = "<group>"; };
 		8A60BC5C3E3D083F529AFF9F /* Pods-TestSwiftApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApplication.debug.xcconfig"; path = "Target Support Files/Pods-TestSwiftApplication/Pods-TestSwiftApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		8B87663F036EBC5B972121C5 /* Pods_TestSwiftApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwiftApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5CAAAD267E29980085CE85 /* KPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				18ACF5412667935E0049DB4E /* Assets.xcassets */,
 				18ACF5432667935E0049DB4E /* LaunchScreen.storyboard */,
 				18ACF5462667935E0049DB4E /* Info.plist */,
+				CA5CAAAD267E29980085CE85 /* KPerson.swift */,
 			);
 			path = TestSwiftApplication;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */,
+				CA5CAAAE267E29980085CE85 /* KPerson.swift in Sources */,
 				186CCCCA267A017C00A97336 /* RxSwiftController.swift in Sources */,
 				18ACF53D2667935B0049DB4E /* ViewController.swift in Sources */,
 				187F8660267AF669006D40ED /* OptionalModeController.swift in Sources */,
