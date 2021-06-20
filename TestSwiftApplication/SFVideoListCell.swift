@@ -26,9 +26,9 @@ class SFVideoListCell: UITableViewCell ,RegisterCellFromNib{
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        indexLabel.snp.makeConstraints {
-            $0.center.equalTo(self)
-        }
+//        indexLabel.snp.makeConstraints {
+//            $0.center.equalTo(self)
+//        }
     }
 
 }

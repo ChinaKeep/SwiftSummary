@@ -8,5 +8,6 @@
 import UIKit
 
 class KPerson: NSObject {
-
+    @objc dynamic var name: String?
+    
 }

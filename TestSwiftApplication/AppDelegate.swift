@@ -8,7 +8,8 @@
 import UIKit
 
 @available(iOS 13.0, *)
-@main
+//@main
+@UIApplicationMain  //版本不一样导致的
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
