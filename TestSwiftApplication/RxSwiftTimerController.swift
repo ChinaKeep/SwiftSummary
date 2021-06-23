@@ -16,7 +16,9 @@ class RxSwiftTimerController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         //GCD timer Use
-        gcdTimerUse()
+//      gcdTimerUse()
+
+        cadDisplaylinkUse()
     }
     
     //MARK: --- timer ---
@@ -37,5 +39,13 @@ class RxSwiftTimerController: UIViewController {
         })
         gcdTimer?.resume()
     }
-
+    //MARK: --- CADisplayLink 的使用 ---
+    func cadDisplaylinkUse() {
+        cadTimer = CADisplayLink.init(target: self, selector: #selector(timerFire))
+        cadTimer?.preferredFramesPerSecond = 1
+        cadTimer?.add(to: RunLoop.current, forMode: .default)
+    }
+    @objc func timerFire(){
+        print("cadTimer")
+    }
 }
