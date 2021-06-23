@@ -22,7 +22,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
       tableView?.dataSource = self as UITableViewDataSource
       self.view.addSubview(tableView!)
       tableView?.register(UINib.init(nibName: "SwiftFuncListCell", bundle: nil), forCellReuseIdentifier: "SwiftFuncListCell")
-      funcName = ["基础算法、冒泡、排序算法","RxSwift","仿抖音循环列表","其他知识点"]
+      funcName = ["基础算法、冒泡、排序算法","RxSwift","仿抖音循环列表","RxSwift-Timer","其他知识点"]
     }
 }
 
@@ -53,6 +53,9 @@ extension ViewController {
         case 2:
             self.navigationController?.pushViewController(CircleListController(), animated:true)
             break
+        case 3:
+                self.navigationController?.pushViewController(RxSwiftTimerController(), animated:true)
+                break
         default:
             print("没有对应的功能")
         }

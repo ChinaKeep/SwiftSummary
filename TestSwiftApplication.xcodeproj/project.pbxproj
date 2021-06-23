@@ -28,6 +28,7 @@
 		CA5B1995267F4C6600B3FE69 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */; };
 		CA5CAAAE267E29980085CE85 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5CAAAD267E29980085CE85 /* KPerson.swift */; };
 		CA5CAAB0267E36AE0085CE85 /* RxSwiftTableViewUseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5CAAAF267E36AE0085CE85 /* RxSwiftTableViewUseController.swift */; };
+		CA6558A7268381BC00182B92 /* RxSwiftTimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6558A6268381BC00182B92 /* RxSwiftTimerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
 		CA5CAAAD267E29980085CE85 /* KPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPerson.swift; sourceTree = "<group>"; };
 		CA5CAAAF267E36AE0085CE85 /* RxSwiftTableViewUseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTableViewUseController.swift; sourceTree = "<group>"; };
+		CA6558A6268381BC00182B92 /* RxSwiftTimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				CA5B198E267F4AF900B3FE69 /* CircleListController.swift */,
 				CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */,
 				186CCCC9267A017C00A97336 /* RxSwiftController.swift */,
+				CA6558A6268381BC00182B92 /* RxSwiftTimerController.swift */,
 				CA5CAAAF267E36AE0085CE85 /* RxSwiftTableViewUseController.swift */,
 				187F865F267AF669006D40ED /* OptionalModeController.swift */,
 				18AE37BA267C82DD001CB064 /* Log.swift */,
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA5B1995267F4C6600B3FE69 /* AlgorithmController.swift in Sources */,
+				CA6558A7268381BC00182B92 /* RxSwiftTimerController.swift in Sources */,
 				18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */,
 				CA5CAAAE267E29980085CE85 /* KPerson.swift in Sources */,
 				186CCCCA267A017C00A97336 /* RxSwiftController.swift in Sources */,
