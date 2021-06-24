@@ -6,5 +6,7 @@ target 'TestSwiftApplication' do
   pod 'RxCocoa'
   
   pod 'SnapKit' #布局约束
-
+  pod 'HandyJSON'
+  pod 'Moya'
+  
 end
