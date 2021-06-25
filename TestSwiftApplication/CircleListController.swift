@@ -170,7 +170,7 @@ extension CircleListController{
         if keyPath == "currendIndex" {
             //获取当前显示的cell
             let indexPath = NSIndexPath(row:self.currendIndex , section: 0)
-            guard let cell : SFVideoListCell = (tableView.cellForRow(at: indexPath as IndexPath) as! SFVideoListCell) else {
+            guard let cell : SFVideoListCell = (tableView.cellForRow(at: indexPath as IndexPath) as? SFVideoListCell) else {
                 return
             }
 //            __weak typeof (cell) wcell = cell;

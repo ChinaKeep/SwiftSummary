@@ -20,6 +20,10 @@ class RxSwiftTimerController: UIViewController {
 
         cadDisplaylinkUse()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        cadTimer?.invalidate()
+    }
     
     //MARK: --- timer ---
     func timerUse() {
@@ -41,7 +45,8 @@ class RxSwiftTimerController: UIViewController {
     }
     //MARK: --- CADisplayLink 的使用 ---
     func cadDisplaylinkUse() {
-        cadTimer = CADisplayLink.init(target: self, selector: #selector(timerFire))
+        weak var weakSelf = self
+        cadTimer = CADisplayLink.init(target:weakSelf as Any, selector: #selector(timerFire))
         cadTimer?.preferredFramesPerSecond = 1
         cadTimer?.add(to: RunLoop.current, forMode: .default)
     }

@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class RxCoreController: UIViewController {
+class RxSwiftCoreController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,22 @@ class RxCoreController: UIViewController {
         let array = [1,2,3,4]
         let array2 = array.filter {
             $0 > 1
+        }.map {
+            $0 * 2
         }
+//        log("\(array2)")
+        print("\(array2)")
 
+        /**
+         RxSwift中的Subjects是什么？
+         Subject 是observable 和 observer 之间的桥梁，一个Subject即是一个Observable 也是一个Observer
+         它既可以发出事件，也可以监听事件
+         
+         */
+        let variable = Variable("S");variable.asObservable().subscribe { event in
+            print("---\(event)")
+        }.addDisposableTo(DisposeBag())
+
+        
     }
 }
