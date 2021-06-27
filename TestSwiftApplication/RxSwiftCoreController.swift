@@ -10,7 +10,8 @@ import RxSwift
 import RxCocoa
 
 class RxSwiftCoreController: UIViewController {
-
+    var textField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
@@ -33,10 +34,21 @@ class RxSwiftCoreController: UIViewController {
          它既可以发出事件，也可以监听事件
          
          */
-        let variable = Variable("S");variable.asObservable().subscribe { event in
+        let variable = Variable("S")
+        variable.asObservable().subscribe { event in
             print("---\(event)")
         }.addDisposableTo(DisposeBag())
 
+        textField = UITextField(frame: CGRect(x: 100, y: 100, width: 100, height: 30))
+//        textField.backgroundColor = UIColor.red
+        textField!.borderStyle = .roundedRect
+        textField!.textColor = UIColor.black
+        view.addSubview(textField!)
+        //点击鼠标 时 输出两次  第一次是初始化 第二次是开始编辑的时候  begen 事件
+        textField!.rx.text.skip(1).subscribe(onNext: {
+            print("输入来了\($0)")
+        })
+        
         
     }
 }
