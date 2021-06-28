@@ -17,7 +17,6 @@ class RxSwiftTimerController: UIViewController {
         view.backgroundColor = UIColor.white
         //GCD timer Use
 //      gcdTimerUse()
-
         cadDisplaylinkUse()
     }
     override func viewWillDisappear(_ animated: Bool) {
