@@ -30,6 +30,20 @@ class AlgorithmController: UIViewController {
         print("斐波那契数列")
         print(fib(29))
         
+        
+        print("--------")
+        
+        let arr = ["FOO", "FOO", "BAR", "FOOBAR"]
+        var counts: [String: Int] = [:]
+        for item in arr { //key  - value 
+            counts[item] = (counts[item] ?? 0) + 1
+        }
+
+        print(counts)  // "[BAR: 1, FOOBAR: 1, FOO: 2]"
+        for (key, value) in counts {
+            print("\(key) occurs \(value) time(s)")
+        }
+        
     }
     /// Mark -- 冒泡
     func bubbleSortMethod(_ nums: inout [Int]) {
@@ -92,6 +106,8 @@ class AlgorithmController: UIViewController {
      f(5) = 1 +
      
      */
+    
+
 }
 
 

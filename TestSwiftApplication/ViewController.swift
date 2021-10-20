@@ -22,7 +22,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
       tableView?.dataSource = self as UITableViewDataSource
       self.view.addSubview(tableView!)
       tableView?.register(UINib.init(nibName: "SwiftFuncListCell", bundle: nil), forCellReuseIdentifier: "SwiftFuncListCell")
-      funcName = ["基础算法、冒泡、排序算法","RxSwift","仿抖音循环列表","RxSwift-Timer","RxSwift-Core","获取启动参数","其他知识点"]
+      funcName = ["基础算法、冒泡、排序算法","RxSwift","仿抖音循环列表","RxSwift-Timer","RxSwift-Core","获取启动参数","网络类型获取","C++学习","其他知识点"]
     }
 }
 
@@ -61,6 +61,12 @@ extension ViewController {
             break
         case 5:
             self.navigationController?.pushViewController(ProcessInfoController(), animated:true)
+            break
+        case 6:
+            self.navigationController?.pushViewController(ReachabilityController(), animated:true)
+            break
+        case 7:
+            self.navigationController?.pushViewController(CPlusViewController(), animated:true)
             break
         default:
             print("没有对应的功能")

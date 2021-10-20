@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CoreTelephony
 
 class RxSwiftCoreController: UIViewController {
     var textField: UITextField?
@@ -49,6 +50,61 @@ class RxSwiftCoreController: UIViewController {
             print("输入来了\($0)")
         })
         
-        
+    }
+    /**
+     ClientNetType_Unknown = 0
+     ClientNetType_NoSignal = 1
+     ClientNetType_2G = 2
+     ClientNetType_3G = 3
+     ClientNetType_4G = 4
+     ClientNetType_Wifi = 5
+     ClientNetType_Wire = 6
+     ClientNetType_5G = 7
+     */
+    func getNetType() -> String {
+        let info = CTTelephonyNetworkInfo()
+        let currentStatus = info.currentRadioAccessTechnology
+        if #available(iOS 14.1, *) {
+            switch currentStatus {
+          
+            case CTRadioAccessTechnologyGPRS,
+                 CTRadioAccessTechnologyEdge,
+                 CTRadioAccessTechnologyCDMA1x:
+                return "2G"
+            case CTRadioAccessTechnologyHSDPA,
+                 CTRadioAccessTechnologyHSUPA,
+                 CTRadioAccessTechnologyCDMAEVDORev0,
+                 CTRadioAccessTechnologyCDMAEVDORevA,
+                 CTRadioAccessTechnologyCDMAEVDORevA,
+                 CTRadioAccessTechnologyWCDMA,
+                 CTRadioAccessTechnologyeHRPD:
+                return "3G"
+            case CTRadioAccessTechnologyLTE:
+                return "4G"
+            case CTRadioAccessTechnologyNRNSA,CTRadioAccessTechnologyNR:
+                return "5G"
+            default:
+                return "0"
+            }
+        } else {
+            switch currentStatus {
+            case CTRadioAccessTechnologyGPRS,
+                 CTRadioAccessTechnologyEdge,
+                 CTRadioAccessTechnologyCDMA1x:
+                return "2G"
+            case CTRadioAccessTechnologyHSDPA,
+                 CTRadioAccessTechnologyHSUPA,
+                 CTRadioAccessTechnologyCDMAEVDORev0,
+                 CTRadioAccessTechnologyCDMAEVDORevA,
+                 CTRadioAccessTechnologyCDMAEVDORevA,
+                 CTRadioAccessTechnologyWCDMA,
+                 CTRadioAccessTechnologyeHRPD:
+                return "3G"
+            case CTRadioAccessTechnologyLTE:
+                return "4G"
+            default:
+                return "0"
+            }
+        }
     }
 }

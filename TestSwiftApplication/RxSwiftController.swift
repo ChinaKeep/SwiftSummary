@@ -32,10 +32,15 @@ class RxSwiftController: UIViewController {
             case completed  //表明Observable终止，不会再发送事件
          }
          */
-        
+        //创建最基本的序列，创建序列最直接的方法就是调用 Observable.create，然后在构建函数里面描述元素的产生过程
+        //observer.onNext(0) 就代表产生了一个元素，他的值是0，后面又产生了9个元素分别是1，2，。。。8，9.最后用observer.onCompleted()表示元素全部产生，没有更多元素了
         let observable = Observable<Int>.create { observer  in
-            observer.onNext(22) //发送消息
-            
+            observer.onNext(1) //发送消息
+            observer.onNext(2) //发送消息
+            observer.onNext(3) //发送消息
+            observer.onNext(4) //发送消息
+            observer.onNext(5) //发送消息
+
             observer.onCompleted() //完成
             return Disposables.create()
         }
