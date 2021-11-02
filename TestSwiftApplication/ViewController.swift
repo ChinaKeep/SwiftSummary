@@ -16,13 +16,25 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-
-      tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
-      tableView?.delegate = self as UITableViewDelegate
-      tableView?.dataSource = self as UITableViewDataSource
-      self.view.addSubview(tableView!)
-      tableView?.register(UINib.init(nibName: "SwiftFuncListCell", bundle: nil), forCellReuseIdentifier: "SwiftFuncListCell")
-      funcName = ["基础算法、冒泡、排序算法","RxSwift","仿抖音循环列表","RxSwift-Timer","RxSwift-Core","获取启动参数","网络类型获取","C++学习","其他知识点"]
+        tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        tableView?.delegate = self as UITableViewDelegate
+        tableView?.dataSource = self as UITableViewDataSource
+        self.view.addSubview(tableView!)
+        tableView?.register(UINib.init(nibName: "SwiftFuncListCell", bundle: nil), forCellReuseIdentifier: "SwiftFuncListCell")
+    
+        funcName = [
+            "基础算法、冒泡、排序算法",
+            "RxSwift",
+            "仿抖音循环列表",
+            "RxSwift-Timer",
+            "RxSwift-Core",
+            "获取启动参数",
+            "网络类型获取",
+            "C++学习",
+            "C语言",
+            "其他知识点"
+        ]
+        
     }
 }
 
@@ -67,6 +79,9 @@ extension ViewController {
             break
         case 7:
             self.navigationController?.pushViewController(CPlusViewController(), animated:true)
+            break
+        case 8:
+            self.navigationController?.pushViewController(CLanguageController(), animated:true)
             break
         default:
             print("没有对应的功能")
