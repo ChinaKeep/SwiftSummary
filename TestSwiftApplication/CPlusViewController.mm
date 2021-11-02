@@ -40,7 +40,6 @@ using namespace std;
      C语言区分大小写字母
      
      C99新增关键字：_Bool _Complex _Imaginary inline restrict
-     
      C11新增关键字：_Alignas _Alignof _Atomic _Generic _Noretern _Static_assert _Thread_local
      */
     
@@ -76,11 +75,6 @@ using namespace std;
         
 
 
-
-    
-    
-    
-    
     JITelephoneInputTextField *textField = [[JITelephoneInputTextField alloc]init];
     textField.frame = CGRectMake(100, 100, 200, 50);
     textField.numShowMode = JITelephoneInputTextField_numShowMode_344;

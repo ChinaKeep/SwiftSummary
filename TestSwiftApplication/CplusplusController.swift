@@ -14,8 +14,4 @@ class CplusplusController: UIViewController {
         super.viewDidLoad()
         
     }
-    
-
-   
-
 }

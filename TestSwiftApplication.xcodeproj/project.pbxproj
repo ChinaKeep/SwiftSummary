@@ -149,11 +149,11 @@
 		18ACF5372667935B0049DB4E /* TestSwiftApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1DFCDECB273141E8003041AF /* 算法 */,
 				18ACF5382667935B0049DB4E /* AppDelegate.swift */,
 				18ACF53A2667935B0049DB4E /* SceneDelegate.swift */,
 				18ACF53C2667935B0049DB4E /* ViewController.swift */,
 				CA5B198E267F4AF900B3FE69 /* CircleListController.swift */,
-				CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */,
 				1DCCFCA8268C1FB6000B7E77 /* ReachabilityController.swift */,
 				1DCCFCC3268C7E23000B7E77 /* ReachablityTool.swift */,
 				186CCCC9267A017C00A97336 /* RxSwiftController.swift */,
@@ -199,6 +199,14 @@
 				18ACF55C2667935F0049DB4E /* Info.plist */,
 			);
 			path = TestSwiftApplicationUITests;
+			sourceTree = "<group>";
+		};
+		1DFCDECB273141E8003041AF /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */,
+			);
+			path = "算法";
 			sourceTree = "<group>";
 		};
 		82A32E4B01D72B04A9A787AD /* Pods */ = {
