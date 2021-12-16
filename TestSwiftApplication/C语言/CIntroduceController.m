@@ -66,7 +66,26 @@
     
     
     //C语言中数组名 一个指针常量，指向这个数组第一个元素的地址，数组的首地址
-
+    /*
+     0x14  //十六进制 20
+     
+     */
+    printf("\n进制打印");
+    int i1 = 20;        //十进制
+    int i2 = 024;       //八进制
+    int i3 = 0x14;      //十六进制
+    int i4 = 0b10100;   //二进制
+    
+    printf("%d %d %d %d",i1,i2,i3,i4);
+    // %d  %i  十进制
+    int i = 20;
+    printf("\n十进制：%d\n",i);     //decimal  十进制
+    printf("十进制：%i\n",i);       //integer
+    printf("八进制：%o\n",i);       //octal 八进制
+    printf("十六进制：%x\n",i);      //hexadecimal 十六进制
+    
+    
+    
     
 }
 

@@ -1,5 +1,5 @@
+abstract_target 'AbstractTarget' do
 
-target 'TestSwiftApplication' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'RxSwift'
@@ -10,7 +10,12 @@ target 'TestSwiftApplication' do
   pod 'Moya'
   pod 'ReachabilitySwift', '~> 4.3.1'
   pod 'YYText', '~> 1.0.7'
-  pod 'JITelephoneInputTextField'
+#  pod 'JITelephoneInputTextField'
+  pod 'Masonry'
+  
+  
+target 'TestSwiftApplication'
+target 'ClassTorch'
 
   
 end

@@ -1,0 +1,6 @@
+framework module Pods_AbstractTarget_ClassTorch {
+  umbrella header "Pods-AbstractTarget-ClassTorch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,9 +5,14 @@
 //  Created by Keep on 2021/11/2.
 //
 
+//#import "ClassTorch-Swift.h"
+//#import "TestSwiftApplication-Swift.h"
 #import "CLanguageController.h"
 #import "CIntroduceController.h"
-
+#import "ByteViewController.h"
+#import "CharTypeController.h"
+#import "DataTypeVC.h"
+#import "OperatorController.h"
 
 @interface CLanguageController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)   UITableView         * tableView;
@@ -28,7 +33,7 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    self.titleName = @[@"C语言简介"];
+    self.titleName = @[@"C语言简介",@"字节",@"Char类型",@"数据类型",@"运算符"];
 
 }
 
@@ -50,6 +55,30 @@
         {
             CIntroduceController *introduceVC = [[CIntroduceController alloc]init];
             [self.navigationController pushViewController:introduceVC animated:YES];
+        }
+            break;
+        case 1:
+        {
+            ByteViewController *byteVC = [[ByteViewController alloc]init];
+            [self.navigationController pushViewController:byteVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            CharTypeController *charVC = [[CharTypeController alloc]init];
+            [self.navigationController pushViewController:charVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            DataTypeVC *charVC = [[DataTypeVC alloc]init];
+            [self.navigationController pushViewController:charVC animated:YES];
+        }
+            break;
+        case 4:
+        {
+            OperatorController *operatorVC = [[OperatorController alloc]init];
+            [self.navigationController pushViewController:operatorVC animated:YES];
         }
             break;
         default:
