@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "SwiftSummary"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "SwiftSummary"
   
   spec.description  = <<-DESC
@@ -21,8 +21,8 @@ This is my project and my first Pods
   spec.source       = { :git => "https://github.com/SuiFengLiuNian/SwiftSummary.git", :tag => spec.version }
 
 
-  spec.source_files  = "TestSwiftApplication", "TestSwiftApplication/C++/*.{h,m}"
-
+  spec.source_files  = "TestSwiftApplication", "C/*.{h,m}"
+  spec.frameworks    = 'Masonry'
   
 
   # spec.resource  = "icon.png"

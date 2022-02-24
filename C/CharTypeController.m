@@ -6,7 +6,8 @@
 //
 
 #import "CharTypeController.h"
-#import <Masonry.h>
+//#import <Masonry.h>
+#import "Masonry.h"
 @interface CharTypeController ()
 
 @end
