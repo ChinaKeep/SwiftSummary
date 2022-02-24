@@ -10,9 +10,10 @@
 #import "JITelephoneInputTextField.h"
 #include <stdio.h>/*预处理命令*/
 #include "MemoryController.h"
+#include "CLanguageController.h"
+
 
 using namespace std;
-
 @interface CPlusViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 @property (strong, nonatomic)   UITableView         * tableView;
 @property (strong, nonatomic)   NSArray             * titleName;
@@ -125,7 +126,7 @@ using namespace std;
             break;
         case 1:
         {
-            UIViewController *byteVC = [[UIViewController alloc]init];
+            CLanguageController *byteVC = [[CLanguageController alloc]init];
             [self.navigationController pushViewController:byteVC animated:YES];
         }
             break;
