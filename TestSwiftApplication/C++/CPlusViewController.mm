@@ -9,10 +9,13 @@
 #include <iostream>
 #import "JITelephoneInputTextField.h"
 #include <stdio.h>/*预处理命令*/
+#include "MemoryController.h"
 
 using namespace std;
 
-@interface CPlusViewController ()<UITextFieldDelegate>
+@interface CPlusViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+@property (strong, nonatomic)   UITableView         * tableView;
+@property (strong, nonatomic)   NSArray             * titleName;
 
 @end
 
@@ -75,15 +78,24 @@ using namespace std;
         
 
 
-    JITelephoneInputTextField *textField = [[JITelephoneInputTextField alloc]init];
-    textField.frame = CGRectMake(100, 100, 200, 50);
-    textField.numShowMode = JITelephoneInputTextField_numShowMode_344;
-    textField.openFirstNumLimit = YES;
-    textField.firstNum = 1;
-    textField.delegate = self;
-    [self.view addSubview:textField];
+//    JITelephoneInputTextField *textField = [[JITelephoneInputTextField alloc]init];
+//    textField.frame = CGRectMake(100, 100, 200, 50);
+//    textField.numShowMode = JITelephoneInputTextField_numShowMode_344;
+//    textField.openFirstNumLimit = YES;
+//    textField.firstNum = 1;
+//    textField.delegate = self;
+//    [self.view addSubview:textField];
+
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
+    self.titleName = @[@"数据之前的转换",@"字节",@"Char类型",@"数据类型",@"运算符",@"数组"];
+    
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
     if([textField isKindOfClass:JITelephoneInputTextField.class]){
         JITelephoneInputTextField *field = (JITelephoneInputTextField*)textField;
         return [field telephoneTextFieldShouldChangeCharactersInRange:range withValueString:string];
@@ -91,6 +103,59 @@ using namespace std;
         return YES;
     }
 }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return  self.titleName.count;
 
+}
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.titleName[indexPath.row];
+    return  cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+        {
+            MemoryController *memoryVC = [[MemoryController alloc]init];
+            [self.navigationController pushViewController:memoryVC animated:YES];
+        }
+            break;
+        case 1:
+        {
+            UIViewController *byteVC = [[UIViewController alloc]init];
+            [self.navigationController pushViewController:byteVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            UIViewController *charVC = [[UIViewController alloc]init];
+            [self.navigationController pushViewController:charVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            UIViewController *charVC = [[UIViewController alloc]init];
+            [self.navigationController pushViewController:charVC animated:YES];
+        }
+            break;
+        case 4:
+        {
+            UIViewController *operatorVC = [[UIViewController alloc]init];
+            [self.navigationController pushViewController:operatorVC animated:YES];
+        }
+            break;
+        case 5:
+        {
+            UIViewController *arrayVC = [[UIViewController alloc]init];
+            [self.navigationController pushViewController:arrayVC animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+}
 
 @end

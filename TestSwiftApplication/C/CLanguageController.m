@@ -5,7 +5,7 @@
 //  Created by Keep on 2021/11/2.
 //
 
-//#import "ClassTorch-Swift.h"
+#import "ClassTorch-Swift.h"
 //#import "TestSwiftApplication-Swift.h"
 #import "CLanguageController.h"
 #import "CIntroduceController.h"
@@ -13,6 +13,7 @@
 #import "CharTypeController.h"
 #import "DataTypeVC.h"
 #import "OperatorController.h"
+#import "ArrayController.h"
 
 @interface CLanguageController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)   UITableView         * tableView;
@@ -33,7 +34,7 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    self.titleName = @[@"C语言简介",@"字节",@"Char类型",@"数据类型",@"运算符"];
+    self.titleName = @[@"C语言简介",@"字节",@"Char类型",@"数据类型",@"运算符",@"数组"];
 
 }
 
@@ -79,6 +80,12 @@
         {
             OperatorController *operatorVC = [[OperatorController alloc]init];
             [self.navigationController pushViewController:operatorVC animated:YES];
+        }
+            break;
+        case 5:
+        {
+            ArrayController *arrayVC = [[ArrayController alloc]init];
+            [self.navigationController pushViewController:arrayVC animated:YES];
         }
             break;
         default:
