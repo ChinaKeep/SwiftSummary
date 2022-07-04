@@ -18,10 +18,10 @@ This is my project and my first Pods
 
   spec.ios.deployment_target = '10.0'
 
-  spec.source       = { :git => "https://github.com/SuiFengLiuNian/SwiftSummary.git", :tag => spec.version }
+  spec.source       = { :git => 'https://github.com/SuiFengLiuNian/SwiftSummary.git', :tag => spec.version }
 
 
-  spec.source_files  = "TestSwiftApplication", "C/*.{h,m}"
+  spec.source_files  =  "SwiftSummary/C/{*.h,*.m,*.xib}"
   spec.frameworks    = 'Masonry'
   
 

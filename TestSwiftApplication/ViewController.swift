@@ -32,6 +32,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             "网络类型获取",
             "C++学习",
             "C语言",
+            "弹幕",
+            "旋转平移动画",
             "其他知识点"
         ]
         
@@ -82,6 +84,12 @@ extension ViewController {
             break
         case 8:
             self.navigationController?.pushViewController(CLanguageController(), animated:true)
+            break
+        case 9:
+            self.navigationController?.pushViewController(BarrageController(), animated: true)
+            break
+        case 10:
+            self.navigationController?.pushViewController(RotationLinerController(), animated: true)
             break
         default:
             print("没有对应的功能")

@@ -5,8 +5,8 @@
 //  Created by Keep on 2021/11/2.
 //
 
-#import "ClassTorch-Swift.h"
-//#import "TestSwiftApplication-Swift.h"
+//#import "ClassTorch-Swift.h"
+#import "TestSwiftApplication-Swift.h"
 #import "CLanguageController.h"
 #import "CIntroduceController.h"
 #import "ByteViewController.h"

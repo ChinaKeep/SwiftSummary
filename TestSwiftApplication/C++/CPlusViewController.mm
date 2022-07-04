@@ -10,8 +10,8 @@
 #import "JITelephoneInputTextField.h"
 #include <stdio.h>/*预处理命令*/
 #include "MemoryController.h"
-#include "CLanguageController.h"
-
+#include "CpLanguageController.h"
+#import "CPlusArrayController.h"
 
 using namespace std;
 @interface CPlusViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
@@ -126,7 +126,7 @@ using namespace std;
             break;
         case 1:
         {
-            CLanguageController *byteVC = [[CLanguageController alloc]init];
+            CpLanguageController *byteVC = [[CpLanguageController alloc]init];
             [self.navigationController pushViewController:byteVC animated:YES];
         }
             break;
@@ -150,7 +150,7 @@ using namespace std;
             break;
         case 5:
         {
-            UIViewController *arrayVC = [[UIViewController alloc]init];
+            UIViewController *arrayVC = [[CPlusArrayController alloc]init];
             [self.navigationController pushViewController:arrayVC animated:YES];
         }
             break;

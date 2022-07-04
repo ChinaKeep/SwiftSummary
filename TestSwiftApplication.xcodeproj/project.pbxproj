@@ -23,6 +23,8 @@
 		18D40F032671E94600A44280 /* SFVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D40F012671E94600A44280 /* SFVideoListCell.xib */; };
 		1D0A26E327675046005CD9D4 /* ClassTorch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A26E227675046005CD9D4 /* ClassTorch.plist */; };
 		1D276E0026B7DC9700140AB7 /* JITelephoneInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D276DFE26B7DC9700140AB7 /* JITelephoneInputTextField.m */; };
+		1D2FC29727DEDE2900CD1A6B /* CpLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FC29627DEDE2900CD1A6B /* CpLanguageController.m */; };
+		1D2FC29827DEDE2900CD1A6B /* CpLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FC29627DEDE2900CD1A6B /* CpLanguageController.m */; };
 		1D3D8AD2277D9377003618BA /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D8AD0277D9377003618BA /* MemoryController.m */; };
 		1D3D8AD3277D9377003618BA /* MemoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3D8AD1277D9377003618BA /* MemoryController.xib */; };
 		1D457B572755D645008D4B73 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B1994267F4C6600B3FE69 /* AlgorithmController.swift */; };
@@ -57,8 +59,36 @@
 		1D88542E27C6440300A875DA /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D8AD0277D9377003618BA /* MemoryController.m */; };
 		1D89E2F526B297AC0063F27F /* CplusplusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D89E2F426B297AC0063F27F /* CplusplusController.swift */; };
 		1D89E2F926B298C20063F27F /* CPlusViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D89E2F826B298C20063F27F /* CPlusViewController.mm */; };
+		1D903CBD283C7F050098A1FB /* RotationLinerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CBC283C7F050098A1FB /* RotationLinerController.swift */; };
+		1DA5DC702834D6BE0055D12F /* CPlusArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */; };
+		1DB3BB1727E2E82500EF4ADE /* CLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */; };
+		1DB3BB1827E2E82500EF4ADE /* CLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */; };
+		1DB3BB1927E2E82500EF4ADE /* OperatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0827E2E82500EF4ADE /* OperatorController.xib */; };
+		1DB3BB1A27E2E82500EF4ADE /* OperatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0827E2E82500EF4ADE /* OperatorController.xib */; };
+		1DB3BB1B27E2E82500EF4ADE /* CharTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0A27E2E82500EF4ADE /* CharTypeController.m */; };
+		1DB3BB1C27E2E82500EF4ADE /* CharTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0A27E2E82500EF4ADE /* CharTypeController.m */; };
+		1DB3BB1D27E2E82500EF4ADE /* ArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0C27E2E82500EF4ADE /* ArrayController.m */; };
+		1DB3BB1E27E2E82500EF4ADE /* ArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0C27E2E82500EF4ADE /* ArrayController.m */; };
+		1DB3BB1F27E2E82500EF4ADE /* DataTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0D27E2E82500EF4ADE /* DataTypeVC.xib */; };
+		1DB3BB2027E2E82500EF4ADE /* DataTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0D27E2E82500EF4ADE /* DataTypeVC.xib */; };
+		1DB3BB2127E2E82500EF4ADE /* CIntroduceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0E27E2E82500EF4ADE /* CIntroduceController.m */; };
+		1DB3BB2227E2E82500EF4ADE /* CIntroduceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0E27E2E82500EF4ADE /* CIntroduceController.m */; };
+		1DB3BB2327E2E82500EF4ADE /* ArrayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0F27E2E82500EF4ADE /* ArrayController.xib */; };
+		1DB3BB2427E2E82500EF4ADE /* ArrayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0F27E2E82500EF4ADE /* ArrayController.xib */; };
+		1DB3BB2527E2E82500EF4ADE /* DataTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1027E2E82500EF4ADE /* DataTypeVC.m */; };
+		1DB3BB2627E2E82500EF4ADE /* DataTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1027E2E82500EF4ADE /* DataTypeVC.m */; };
+		1DB3BB2727E2E82500EF4ADE /* ByteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1227E2E82500EF4ADE /* ByteViewController.m */; };
+		1DB3BB2827E2E82500EF4ADE /* ByteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1227E2E82500EF4ADE /* ByteViewController.m */; };
+		1DB3BB2927E2E82500EF4ADE /* ByteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1327E2E82500EF4ADE /* ByteController.swift */; };
+		1DB3BB2A27E2E82500EF4ADE /* ByteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1327E2E82500EF4ADE /* ByteController.swift */; };
+		1DB3BB2B27E2E82500EF4ADE /* OperatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1427E2E82500EF4ADE /* OperatorController.m */; };
+		1DB3BB2C27E2E82500EF4ADE /* OperatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB1427E2E82500EF4ADE /* OperatorController.m */; };
 		1DCCFCA9268C1FB6000B7E77 /* ReachabilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCFCA8268C1FB6000B7E77 /* ReachabilityController.swift */; };
 		1DCCFCC4268C7E23000B7E77 /* ReachablityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCFCC3268C7E23000B7E77 /* ReachablityTool.swift */; };
+		1DD9CC9327FC4CE20003EFF4 /* BarrageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CC9227FC4CE20003EFF4 /* BarrageController.swift */; };
+		1DD9CC9527FC4D7B0003EFF4 /* BarrageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CC9427FC4D7B0003EFF4 /* BarrageCell.swift */; };
+		1DD9CC9B27FDBB990003EFF4 /* BarrageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9CC9A27FDBB990003EFF4 /* BarrageView.swift */; };
+		1DFDD02A27EC6F7400689E0C /* FileStreamOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDD02927EC6F7400689E0C /* FileStreamOperation.m */; };
 		2DD9417B60EFE5DA42B2A5E7 /* Pods_AbstractTarget_ClassTorch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D4FB8EC9891913165B2633 /* Pods_AbstractTarget_ClassTorch.framework */; };
 		C79BD17DB0BD919D2E1C16A6 /* Pods_AbstractTarget_TestSwiftApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4688DE3C60974C2DA17E615 /* Pods_AbstractTarget_TestSwiftApplication.framework */; };
 		CA5B198F267F4AF900B3FE69 /* CircleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B198E267F4AF900B3FE69 /* CircleListController.swift */; };
@@ -111,6 +141,8 @@
 		1D0A26E227675046005CD9D4 /* ClassTorch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassTorch.plist; sourceTree = "<group>"; };
 		1D276DFE26B7DC9700140AB7 /* JITelephoneInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JITelephoneInputTextField.m; sourceTree = "<group>"; };
 		1D276DFF26B7DC9700140AB7 /* JITelephoneInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JITelephoneInputTextField.h; sourceTree = "<group>"; };
+		1D2FC29527DEDE2900CD1A6B /* CpLanguageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CpLanguageController.h; sourceTree = "<group>"; };
+		1D2FC29627DEDE2900CD1A6B /* CpLanguageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CpLanguageController.m; sourceTree = "<group>"; };
 		1D3D8ACF277D9377003618BA /* MemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryController.h; sourceTree = "<group>"; };
 		1D3D8AD0277D9377003618BA /* MemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryController.m; sourceTree = "<group>"; };
 		1D3D8AD1277D9377003618BA /* MemoryController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryController.xib; sourceTree = "<group>"; };
@@ -122,8 +154,34 @@
 		1D89E2F626B298C20063F27F /* TestSwiftApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwiftApplication-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D89E2F726B298C20063F27F /* CPlusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusViewController.h; sourceTree = "<group>"; };
 		1D89E2F826B298C20063F27F /* CPlusViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusViewController.mm; sourceTree = "<group>"; };
+		1D903CBC283C7F050098A1FB /* RotationLinerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationLinerController.swift; sourceTree = "<group>"; };
+		1DA5DC6E2834D6BE0055D12F /* CPlusArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusArrayController.h; sourceTree = "<group>"; };
+		1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPlusArrayController.m; sourceTree = "<group>"; };
+		1DB3BB0527E2E82500EF4ADE /* CIntroduceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIntroduceController.h; sourceTree = "<group>"; };
+		1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLanguageController.m; sourceTree = "<group>"; };
+		1DB3BB0727E2E82500EF4ADE /* OperatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorController.h; sourceTree = "<group>"; };
+		1DB3BB0827E2E82500EF4ADE /* OperatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperatorController.xib; sourceTree = "<group>"; };
+		1DB3BB0927E2E82500EF4ADE /* ByteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteViewController.h; sourceTree = "<group>"; };
+		1DB3BB0A27E2E82500EF4ADE /* CharTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharTypeController.m; sourceTree = "<group>"; };
+		1DB3BB0B27E2E82500EF4ADE /* DataTypeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypeVC.h; sourceTree = "<group>"; };
+		1DB3BB0C27E2E82500EF4ADE /* ArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayController.m; sourceTree = "<group>"; };
+		1DB3BB0D27E2E82500EF4ADE /* DataTypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTypeVC.xib; sourceTree = "<group>"; };
+		1DB3BB0E27E2E82500EF4ADE /* CIntroduceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIntroduceController.m; sourceTree = "<group>"; };
+		1DB3BB0F27E2E82500EF4ADE /* ArrayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrayController.xib; sourceTree = "<group>"; };
+		1DB3BB1027E2E82500EF4ADE /* DataTypeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTypeVC.m; sourceTree = "<group>"; };
+		1DB3BB1127E2E82500EF4ADE /* CharTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharTypeController.h; sourceTree = "<group>"; };
+		1DB3BB1227E2E82500EF4ADE /* ByteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByteViewController.m; sourceTree = "<group>"; };
+		1DB3BB1327E2E82500EF4ADE /* ByteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteController.swift; sourceTree = "<group>"; };
+		1DB3BB1427E2E82500EF4ADE /* OperatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorController.m; sourceTree = "<group>"; };
+		1DB3BB1527E2E82500EF4ADE /* CLanguageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLanguageController.h; sourceTree = "<group>"; };
+		1DB3BB1627E2E82500EF4ADE /* ArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayController.h; sourceTree = "<group>"; };
 		1DCCFCA8268C1FB6000B7E77 /* ReachabilityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityController.swift; sourceTree = "<group>"; };
 		1DCCFCC3268C7E23000B7E77 /* ReachablityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachablityTool.swift; sourceTree = "<group>"; };
+		1DD9CC9227FC4CE20003EFF4 /* BarrageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrageController.swift; sourceTree = "<group>"; };
+		1DD9CC9427FC4D7B0003EFF4 /* BarrageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrageCell.swift; sourceTree = "<group>"; };
+		1DD9CC9A27FDBB990003EFF4 /* BarrageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrageView.swift; sourceTree = "<group>"; };
+		1DFDD02827EC6F7400689E0C /* FileStreamOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileStreamOperation.h; sourceTree = "<group>"; };
+		1DFDD02927EC6F7400689E0C /* FileStreamOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileStreamOperation.m; sourceTree = "<group>"; };
 		2031D212734BF8FE37214FCB /* Pods-AbstractTarget-ClassTorch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbstractTarget-ClassTorch.debug.xcconfig"; path = "Target Support Files/Pods-AbstractTarget-ClassTorch/Pods-AbstractTarget-ClassTorch.debug.xcconfig"; sourceTree = "<group>"; };
 		2C02542535A433957DBC3B73 /* Pods-TestSwiftApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApplication.release.xcconfig"; path = "Target Support Files/Pods-TestSwiftApplication/Pods-TestSwiftApplication.release.xcconfig"; sourceTree = "<group>"; };
 		8A60BC5C3E3D083F529AFF9F /* Pods-TestSwiftApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApplication.debug.xcconfig"; path = "Target Support Files/Pods-TestSwiftApplication/Pods-TestSwiftApplication.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +260,7 @@
 		18ACF5372667935B0049DB4E /* TestSwiftApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1DB3BB0427E2E82500EF4ADE /* C */,
 				1D3D8ACE277D8F68003618BA /* C++ */,
 				1DFCDECB273141E8003041AF /* 算法 */,
 				18ACF5382667935B0049DB4E /* AppDelegate.swift */,
@@ -217,6 +276,10 @@
 				CA6558A6268381BC00182B92 /* RxSwiftTimerController.swift */,
 				CA5CAAAF267E36AE0085CE85 /* RxSwiftTableViewUseController.swift */,
 				187F865F267AF669006D40ED /* OptionalModeController.swift */,
+				1DD9CC9227FC4CE20003EFF4 /* BarrageController.swift */,
+				1D903CBC283C7F050098A1FB /* RotationLinerController.swift */,
+				1DD9CC9A27FDBB990003EFF4 /* BarrageView.swift */,
+				1DD9CC9427FC4D7B0003EFF4 /* BarrageCell.swift */,
 				18AE37BA267C82DD001CB064 /* Log.swift */,
 				18D40F002671E94600A44280 /* SFVideoListCell.swift */,
 				18D40F012671E94600A44280 /* SFVideoListCell.xib */,
@@ -262,9 +325,40 @@
 				1D3D8ACF277D9377003618BA /* MemoryController.h */,
 				1D3D8AD0277D9377003618BA /* MemoryController.m */,
 				1D3D8AD1277D9377003618BA /* MemoryController.xib */,
+				1D2FC29527DEDE2900CD1A6B /* CpLanguageController.h */,
+				1D2FC29627DEDE2900CD1A6B /* CpLanguageController.m */,
+				1DFDD02827EC6F7400689E0C /* FileStreamOperation.h */,
+				1DFDD02927EC6F7400689E0C /* FileStreamOperation.m */,
+				1DA5DC6E2834D6BE0055D12F /* CPlusArrayController.h */,
+				1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
+		};
+		1DB3BB0427E2E82500EF4ADE /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3BB0527E2E82500EF4ADE /* CIntroduceController.h */,
+				1DB3BB0E27E2E82500EF4ADE /* CIntroduceController.m */,
+				1DB3BB0727E2E82500EF4ADE /* OperatorController.h */,
+				1DB3BB0827E2E82500EF4ADE /* OperatorController.xib */,
+				1DB3BB1127E2E82500EF4ADE /* CharTypeController.h */,
+				1DB3BB0A27E2E82500EF4ADE /* CharTypeController.m */,
+				1DB3BB0D27E2E82500EF4ADE /* DataTypeVC.xib */,
+				1DB3BB0B27E2E82500EF4ADE /* DataTypeVC.h */,
+				1DB3BB1027E2E82500EF4ADE /* DataTypeVC.m */,
+				1DB3BB0927E2E82500EF4ADE /* ByteViewController.h */,
+				1DB3BB1227E2E82500EF4ADE /* ByteViewController.m */,
+				1DB3BB1327E2E82500EF4ADE /* ByteController.swift */,
+				1DB3BB1427E2E82500EF4ADE /* OperatorController.m */,
+				1DB3BB1527E2E82500EF4ADE /* CLanguageController.h */,
+				1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */,
+				1DB3BB1627E2E82500EF4ADE /* ArrayController.h */,
+				1DB3BB0C27E2E82500EF4ADE /* ArrayController.m */,
+				1DB3BB0F27E2E82500EF4ADE /* ArrayController.xib */,
+			);
+			path = C;
+			sourceTree = SOURCE_ROOT;
 		};
 		1DFCDECB273141E8003041AF /* 算法 */ = {
 			isa = PBXGroup;
@@ -423,12 +517,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3D8AD3277D9377003618BA /* MemoryController.xib in Resources */,
+				1DB3BB2327E2E82500EF4ADE /* ArrayController.xib in Resources */,
 				18D40F032671E94600A44280 /* SFVideoListCell.xib in Resources */,
 				1D0A26E327675046005CD9D4 /* ClassTorch.plist in Resources */,
 				CA5B1993267F4C4000B3FE69 /* SwiftFuncListCell.xib in Resources */,
 				18ACF5452667935E0049DB4E /* LaunchScreen.storyboard in Resources */,
 				18ACF5422667935E0049DB4E /* Assets.xcassets in Resources */,
 				18ACF5402667935B0049DB4E /* Main.storyboard in Resources */,
+				1DB3BB1F27E2E82500EF4ADE /* DataTypeVC.xib in Resources */,
+				1DB3BB1927E2E82500EF4ADE /* OperatorController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,8 +550,11 @@
 				1D457B742755D645008D4B73 /* SFVideoListCell.xib in Resources */,
 				1D457B752755D645008D4B73 /* SwiftFuncListCell.xib in Resources */,
 				1D457B7F2755F9AD008D4B73 /* ClassTorch.plist in Resources */,
+				1DB3BB2427E2E82500EF4ADE /* ArrayController.xib in Resources */,
 				1D457B762755D645008D4B73 /* LaunchScreen.storyboard in Resources */,
+				1DB3BB2027E2E82500EF4ADE /* DataTypeVC.xib in Resources */,
 				1D457B772755D645008D4B73 /* Assets.xcassets in Resources */,
+				1DB3BB1A27E2E82500EF4ADE /* OperatorController.xib in Resources */,
 				1D457B782755D645008D4B73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB3BB2127E2E82500EF4ADE /* CIntroduceController.m in Sources */,
 				CA5B1995267F4C6600B3FE69 /* AlgorithmController.swift in Sources */,
 				CA6558A7268381BC00182B92 /* RxSwiftTimerController.swift in Sources */,
 				1D3D8AD2277D9377003618BA /* MemoryController.m in Sources */,
@@ -554,21 +655,35 @@
 				CA5CAAAE267E29980085CE85 /* KPerson.swift in Sources */,
 				186CCCCA267A017C00A97336 /* RxSwiftController.swift in Sources */,
 				1DCCFCA9268C1FB6000B7E77 /* ReachabilityController.swift in Sources */,
+				1DB3BB2B27E2E82500EF4ADE /* OperatorController.m in Sources */,
 				1D7AD3FE2684936D006A1F07 /* ProcessInfoController.swift in Sources */,
+				1DD9CC9B27FDBB990003EFF4 /* BarrageView.swift in Sources */,
 				18ACF53D2667935B0049DB4E /* ViewController.swift in Sources */,
 				187F8660267AF669006D40ED /* OptionalModeController.swift in Sources */,
 				1D7AD3FC26845216006A1F07 /* RxSwiftCoreController.swift in Sources */,
+				1DFDD02A27EC6F7400689E0C /* FileStreamOperation.m in Sources */,
+				1DB3BB2727E2E82500EF4ADE /* ByteViewController.m in Sources */,
+				1DB3BB1727E2E82500EF4ADE /* CLanguageController.m in Sources */,
 				1D89E2F926B298C20063F27F /* CPlusViewController.mm in Sources */,
 				1DCCFCC4268C7E23000B7E77 /* ReachablityTool.swift in Sources */,
 				18ACF5392667935B0049DB4E /* AppDelegate.swift in Sources */,
+				1DB3BB2927E2E82500EF4ADE /* ByteController.swift in Sources */,
 				1D89E2F526B297AC0063F27F /* CplusplusController.swift in Sources */,
 				18ACF53B2667935B0049DB4E /* SceneDelegate.swift in Sources */,
+				1D2FC29727DEDE2900CD1A6B /* CpLanguageController.m in Sources */,
+				1DB3BB1B27E2E82500EF4ADE /* CharTypeController.m in Sources */,
+				1DB3BB2527E2E82500EF4ADE /* DataTypeVC.m in Sources */,
 				CA5B1992267F4C4000B3FE69 /* SwiftFuncListCell.swift in Sources */,
+				1DA5DC702834D6BE0055D12F /* CPlusArrayController.m in Sources */,
+				1DD9CC9527FC4D7B0003EFF4 /* BarrageCell.swift in Sources */,
 				CA5CAAB0267E36AE0085CE85 /* RxSwiftTableViewUseController.swift in Sources */,
 				18AE37BB267C82DD001CB064 /* Log.swift in Sources */,
 				CA5B198F267F4AF900B3FE69 /* CircleListController.swift in Sources */,
+				1D903CBD283C7F050098A1FB /* RotationLinerController.swift in Sources */,
 				1D276E0026B7DC9700140AB7 /* JITelephoneInputTextField.m in Sources */,
 				18D40EFC2671E15200A44280 /* SFScreenSizeTool.swift in Sources */,
+				1DB3BB1D27E2E82500EF4ADE /* ArrayController.m in Sources */,
+				1DD9CC9327FC4CE20003EFF4 /* BarrageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB3BB2227E2E82500EF4ADE /* CIntroduceController.m in Sources */,
 				1D88542E27C6440300A875DA /* MemoryController.m in Sources */,
 				1D457B572755D645008D4B73 /* AlgorithmController.swift in Sources */,
 				1D457B582755D645008D4B73 /* RxSwiftTimerController.swift in Sources */,
@@ -599,21 +715,29 @@
 				1D457B5B2755D645008D4B73 /* KPerson.swift in Sources */,
 				1D457B5C2755D645008D4B73 /* RxSwiftController.swift in Sources */,
 				1D457B5D2755D645008D4B73 /* ReachabilityController.swift in Sources */,
+				1DB3BB2C27E2E82500EF4ADE /* OperatorController.m in Sources */,
 				1D457B5E2755D645008D4B73 /* ProcessInfoController.swift in Sources */,
 				1D457B5F2755D645008D4B73 /* ViewController.swift in Sources */,
 				1D457B602755D645008D4B73 /* OptionalModeController.swift in Sources */,
 				1D457B612755D645008D4B73 /* RxSwiftCoreController.swift in Sources */,
+				1DB3BB2827E2E82500EF4ADE /* ByteViewController.m in Sources */,
+				1DB3BB1827E2E82500EF4ADE /* CLanguageController.m in Sources */,
 				1D457B622755D645008D4B73 /* CPlusViewController.mm in Sources */,
 				1D457B632755D645008D4B73 /* ReachablityTool.swift in Sources */,
 				1D457B642755D645008D4B73 /* AppDelegate.swift in Sources */,
+				1DB3BB2A27E2E82500EF4ADE /* ByteController.swift in Sources */,
 				1D457B652755D645008D4B73 /* CplusplusController.swift in Sources */,
 				1D457B662755D645008D4B73 /* SceneDelegate.swift in Sources */,
+				1D2FC29827DEDE2900CD1A6B /* CpLanguageController.m in Sources */,
+				1DB3BB1C27E2E82500EF4ADE /* CharTypeController.m in Sources */,
+				1DB3BB2627E2E82500EF4ADE /* DataTypeVC.m in Sources */,
 				1D457B682755D645008D4B73 /* SwiftFuncListCell.swift in Sources */,
 				1D457B692755D645008D4B73 /* RxSwiftTableViewUseController.swift in Sources */,
 				1D457B6B2755D645008D4B73 /* Log.swift in Sources */,
 				1D457B6C2755D645008D4B73 /* CircleListController.swift in Sources */,
 				1D457B6E2755D645008D4B73 /* JITelephoneInputTextField.m in Sources */,
 				1D457B6F2755D645008D4B73 /* SFScreenSizeTool.swift in Sources */,
+				1DB3BB1E27E2E82500EF4ADE /* ArrayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,14 +901,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				DEVELOPMENT_TEAM = 5QK82N24SZ;
 				INFOPLIST_FILE = TestSwiftApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keep.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftApplication/TestSwiftApplication-Bridging-Header.h";
@@ -803,14 +927,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				DEVELOPMENT_TEAM = 5QK82N24SZ;
 				INFOPLIST_FILE = TestSwiftApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keep.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftApplication/TestSwiftApplication-Bridging-Header.h";
@@ -908,7 +1032,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				DEVELOPMENT_TEAM = 5QK82N24SZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClassTorch.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "薪伙科技";
@@ -924,7 +1048,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DClassTorch";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keep.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftApplication/TestSwiftApplication-Bridging-Header.h";
@@ -943,7 +1067,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KFRVB6Y3M2;
+				DEVELOPMENT_TEAM = 5QK82N24SZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClassTorch.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "薪伙科技";
@@ -959,7 +1083,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DClassTorch";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dognzi.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keep.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftApplication/TestSwiftApplication-Bridging-Header.h";
