@@ -34,6 +34,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             "C语言",
             "弹幕",
             "旋转平移动画",
+            "日志分析dSYM",
             "其他知识点"
         ]
         
@@ -91,6 +92,8 @@ extension ViewController {
         case 10:
             self.navigationController?.pushViewController(RotationLinerController(), animated: true)
             break
+        case 11: //日志分析
+            self.navigationController?.pushViewController(dSYMController(), animated: true)
         default:
             print("没有对应的功能")
         }

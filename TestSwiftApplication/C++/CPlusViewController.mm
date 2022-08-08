@@ -12,6 +12,7 @@
 #include "MemoryController.h"
 #include "CpLanguageController.h"
 #import "CPlusArrayController.h"
+#import "ArrayPointerController.h"
 
 using namespace std;
 @interface CPlusViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
@@ -92,7 +93,15 @@ using namespace std;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-    self.titleName = @[@"数据之前的转换",@"字节",@"Char类型",@"数据类型",@"运算符",@"数组"];
+    self.titleName = @[
+        @"数据之前的转换",
+        @"字节",
+        @"Char类型",
+        @"数据类型",
+        @"运算符",
+        @"数组",
+        @"数组指针",
+    ];
     
 }
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
@@ -152,6 +161,12 @@ using namespace std;
         {
             UIViewController *arrayVC = [[CPlusArrayController alloc]init];
             [self.navigationController pushViewController:arrayVC animated:YES];
+        }
+            break;
+        case 6:
+        {
+            UIViewController *arrayPointerVC = [[ArrayPointerController alloc]init];
+            [self.navigationController pushViewController:arrayPointerVC animated:YES];
         }
             break;
         default:

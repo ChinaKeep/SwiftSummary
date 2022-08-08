@@ -56,11 +56,13 @@
 		1D457B7F2755F9AD008D4B73 /* ClassTorch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D457B7E2755D645008D4B73 /* ClassTorch.plist */; };
 		1D7AD3FC26845216006A1F07 /* RxSwiftCoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AD3FB26845216006A1F07 /* RxSwiftCoreController.swift */; };
 		1D7AD3FE2684936D006A1F07 /* ProcessInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AD3FD2684936D006A1F07 /* ProcessInfoController.swift */; };
+		1D86DE87287FB7C10004C779 /* dSYMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D86DE86287FB7C10004C779 /* dSYMController.m */; };
 		1D88542E27C6440300A875DA /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D8AD0277D9377003618BA /* MemoryController.m */; };
 		1D89E2F526B297AC0063F27F /* CplusplusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D89E2F426B297AC0063F27F /* CplusplusController.swift */; };
 		1D89E2F926B298C20063F27F /* CPlusViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D89E2F826B298C20063F27F /* CPlusViewController.mm */; };
 		1D903CBD283C7F050098A1FB /* RotationLinerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D903CBC283C7F050098A1FB /* RotationLinerController.swift */; };
-		1DA5DC702834D6BE0055D12F /* CPlusArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */; };
+		1DA30B682893E9A30099A3C4 /* ArrayPointerController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DA30B672893E9A30099A3C4 /* ArrayPointerController.mm */; };
+		1DA5DC702834D6BE0055D12F /* CPlusArrayController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.mm */; };
 		1DB3BB1727E2E82500EF4ADE /* CLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */; };
 		1DB3BB1827E2E82500EF4ADE /* CLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */; };
 		1DB3BB1927E2E82500EF4ADE /* OperatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3BB0827E2E82500EF4ADE /* OperatorController.xib */; };
@@ -150,13 +152,17 @@
 		1D457B7E2755D645008D4B73 /* ClassTorch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ClassTorch.plist; path = /Users/keep/Desktop/SwiftSummary/ClassTorch.plist; sourceTree = "<absolute>"; };
 		1D7AD3FB26845216006A1F07 /* RxSwiftCoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCoreController.swift; sourceTree = "<group>"; };
 		1D7AD3FD2684936D006A1F07 /* ProcessInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoController.swift; sourceTree = "<group>"; };
+		1D86DE85287FB7C10004C779 /* dSYMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dSYMController.h; sourceTree = "<group>"; };
+		1D86DE86287FB7C10004C779 /* dSYMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dSYMController.m; sourceTree = "<group>"; };
 		1D89E2F426B297AC0063F27F /* CplusplusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CplusplusController.swift; sourceTree = "<group>"; };
 		1D89E2F626B298C20063F27F /* TestSwiftApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwiftApplication-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D89E2F726B298C20063F27F /* CPlusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusViewController.h; sourceTree = "<group>"; };
 		1D89E2F826B298C20063F27F /* CPlusViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusViewController.mm; sourceTree = "<group>"; };
 		1D903CBC283C7F050098A1FB /* RotationLinerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationLinerController.swift; sourceTree = "<group>"; };
+		1DA30B662893E9A30099A3C4 /* ArrayPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayPointerController.h; sourceTree = "<group>"; };
+		1DA30B672893E9A30099A3C4 /* ArrayPointerController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ArrayPointerController.mm; sourceTree = "<group>"; };
 		1DA5DC6E2834D6BE0055D12F /* CPlusArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusArrayController.h; sourceTree = "<group>"; };
-		1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPlusArrayController.m; sourceTree = "<group>"; };
+		1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusArrayController.mm; sourceTree = "<group>"; };
 		1DB3BB0527E2E82500EF4ADE /* CIntroduceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIntroduceController.h; sourceTree = "<group>"; };
 		1DB3BB0627E2E82500EF4ADE /* CLanguageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLanguageController.m; sourceTree = "<group>"; };
 		1DB3BB0727E2E82500EF4ADE /* OperatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorController.h; sourceTree = "<group>"; };
@@ -330,7 +336,11 @@
 				1DFDD02827EC6F7400689E0C /* FileStreamOperation.h */,
 				1DFDD02927EC6F7400689E0C /* FileStreamOperation.m */,
 				1DA5DC6E2834D6BE0055D12F /* CPlusArrayController.h */,
-				1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.m */,
+				1DA5DC6F2834D6BE0055D12F /* CPlusArrayController.mm */,
+				1DA30B662893E9A30099A3C4 /* ArrayPointerController.h */,
+				1DA30B672893E9A30099A3C4 /* ArrayPointerController.mm */,
+				1D86DE85287FB7C10004C779 /* dSYMController.h */,
+				1D86DE86287FB7C10004C779 /* dSYMController.m */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -649,6 +659,7 @@
 			files = (
 				1DB3BB2127E2E82500EF4ADE /* CIntroduceController.m in Sources */,
 				CA5B1995267F4C6600B3FE69 /* AlgorithmController.swift in Sources */,
+				1D86DE87287FB7C10004C779 /* dSYMController.m in Sources */,
 				CA6558A7268381BC00182B92 /* RxSwiftTimerController.swift in Sources */,
 				1D3D8AD2277D9377003618BA /* MemoryController.m in Sources */,
 				18D40F022671E94600A44280 /* SFVideoListCell.swift in Sources */,
@@ -671,10 +682,11 @@
 				1D89E2F526B297AC0063F27F /* CplusplusController.swift in Sources */,
 				18ACF53B2667935B0049DB4E /* SceneDelegate.swift in Sources */,
 				1D2FC29727DEDE2900CD1A6B /* CpLanguageController.m in Sources */,
+				1DA30B682893E9A30099A3C4 /* ArrayPointerController.mm in Sources */,
 				1DB3BB1B27E2E82500EF4ADE /* CharTypeController.m in Sources */,
 				1DB3BB2527E2E82500EF4ADE /* DataTypeVC.m in Sources */,
 				CA5B1992267F4C4000B3FE69 /* SwiftFuncListCell.swift in Sources */,
-				1DA5DC702834D6BE0055D12F /* CPlusArrayController.m in Sources */,
+				1DA5DC702834D6BE0055D12F /* CPlusArrayController.mm in Sources */,
 				1DD9CC9527FC4D7B0003EFF4 /* BarrageCell.swift in Sources */,
 				CA5CAAB0267E36AE0085CE85 /* RxSwiftTableViewUseController.swift in Sources */,
 				18AE37BB267C82DD001CB064 /* Log.swift in Sources */,
